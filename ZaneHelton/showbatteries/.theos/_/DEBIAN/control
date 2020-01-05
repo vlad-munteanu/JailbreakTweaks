@@ -1,0 +1,10 @@
+Package: com.lesgarcons.showbatteries
+Name: ShowBatteries
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Vlad Munteanu
+Author: Vlad Munteanu
+Section: Tweaks
+Version: 0.0.1-1+debug
+Installed-Size: 200
