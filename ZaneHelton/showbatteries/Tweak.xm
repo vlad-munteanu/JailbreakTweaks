@@ -1,3 +1,4 @@
+
 @interface BCBatteryDeviceController : NSObject {
     NSArray *_sortedDevices;
 }
@@ -22,7 +23,7 @@ completion:(void (^)(void))completion {
         NSArray *devices = MSHookIvar<NSArray *>(bcb, "_sortedDevices");
         
         NSMutableString *newMessage = [NSMutableString new];
-        
+        NSLog(@"Hey Vlad Vlad!");        
         for (BCBatteryDevice *device in devices) {
             //NSString *deviceName = MSHookIvar<NSString *>(device, "_name");
             NSString *deviceName = [device valueForKey:@"_name"];

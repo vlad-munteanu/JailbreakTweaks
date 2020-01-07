@@ -1,4 +1,6 @@
 #line 1 "Tweak.xm"
+#include <IOKit>
+
 @interface BCBatteryDeviceController : NSObject {
     NSArray *_sortedDevices;
 }
@@ -36,7 +38,7 @@
 @class UIViewController; @class BCBatteryDeviceController; 
 static void (*_logos_orig$_ungrouped$UIViewController$presentViewController$animated$completion$)(_LOGOS_SELF_TYPE_NORMAL UIViewController* _LOGOS_SELF_CONST, SEL, UIViewController *, BOOL, void (^)(void)); static void _logos_method$_ungrouped$UIViewController$presentViewController$animated$completion$(_LOGOS_SELF_TYPE_NORMAL UIViewController* _LOGOS_SELF_CONST, SEL, UIViewController *, BOOL, void (^)(void)); 
 static __inline__ __attribute__((always_inline)) __attribute__((unused)) Class _logos_static_class_lookup$BCBatteryDeviceController(void) { static Class _klass; if(!_klass) { _klass = objc_getClass("BCBatteryDeviceController"); } return _klass; }
-#line 14 "Tweak.xm"
+#line 16 "Tweak.xm"
 
 
 
@@ -48,7 +50,8 @@ static void _logos_method$_ungrouped$UIViewController$presentViewController$anim
         NSArray *devices = MSHookIvar<NSArray *>(bcb, "_sortedDevices");
         
         NSMutableString *newMessage = [NSMutableString new];
-        
+        NSLog(@"Hey Vlad Vlad!");        
+        IOLog(@"we out here 0x7D1");
         for (BCBatteryDevice *device in devices) {
             
             NSString *deviceName = [device valueForKey:@"_name"];
@@ -70,4 +73,4 @@ static void _logos_method$_ungrouped$UIViewController$presentViewController$anim
 
 static __attribute__((constructor)) void _logosLocalInit() {
 {Class _logos_class$_ungrouped$UIViewController = objc_getClass("UIViewController"); MSHookMessageEx(_logos_class$_ungrouped$UIViewController, @selector(presentViewController:animated:completion:), (IMP)&_logos_method$_ungrouped$UIViewController$presentViewController$animated$completion$, (IMP*)&_logos_orig$_ungrouped$UIViewController$presentViewController$animated$completion$);} }
-#line 45 "Tweak.xm"
+#line 48 "Tweak.xm"

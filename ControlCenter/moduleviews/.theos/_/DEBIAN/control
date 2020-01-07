@@ -1,0 +1,10 @@
+Package: com.lesgarcons.moduleviews
+Name: ModuleViews
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Vlad Munteanu
+Author: Vlad Munteanu
+Section: Tweaks
+Version: 0.0.1-5+debug
+Installed-Size: 200

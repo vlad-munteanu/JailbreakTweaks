@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "*.x": "objective-c",
+    "*.xm": "objective-c",
+    "*.h": "objective-c",
+    "*.m": "objective-c"
+  }
+}
