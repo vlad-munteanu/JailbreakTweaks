@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC2082C123C32998004BD6F9 /* Tweak.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2082C023C32998004BD6F9 /* Tweak.m */; };
+		CCB59BE823C6A3CA00DBA2A2 /* Tweak.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB59BE723C6A3CA00DBA2A2 /* Tweak.m */; };
 		CCD6E6BC23C2BF53006EC151 /* test.h in Headers */ = {isa = PBXBuildFile; fileRef = CCD6E6BA23C2BF53006EC151 /* test.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CCD6E6C323C2BF82006EC151 /* myTweakAutoHook.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD6E6C223C2BF82006EC151 /* myTweakAutoHook.m */; };
 		CCD6E6C623C2C002006EC151 /* myTweak.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD6E6C523C2C002006EC151 /* myTweak.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CC2082C023C32998004BD6F9 /* Tweak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tweak.m; path = ../../ControlCenter/moduleviews/Tweak.m; sourceTree = "<group>"; };
+		CCB59BE723C6A3CA00DBA2A2 /* Tweak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tweak.m; path = ../../ZaneHelton/preferencedemo/Tweak.m; sourceTree = "<group>"; };
 		CCD6E6B723C2BF53006EC151 /* test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD6E6BA23C2BF53006EC151 /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
 		CCD6E6BB23C2BF53006EC151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 				CCD6E6BB23C2BF53006EC151 /* Info.plist */,
 				CCD6E6C223C2BF82006EC151 /* myTweakAutoHook.m */,
 				CCD6E6C423C2BF92006EC151 /* myTweakAutoHook.h */,
-				CC2082C023C32998004BD6F9 /* Tweak.m */,
+				CCB59BE723C6A3CA00DBA2A2 /* Tweak.m */,
 				CCD6E6C523C2C002006EC151 /* myTweak.m */,
 			);
 			path = test;
@@ -142,8 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC2082C123C32998004BD6F9 /* Tweak.m in Sources */,
 				CCD6E6C623C2C002006EC151 /* myTweak.m in Sources */,
+				CCB59BE823C6A3CA00DBA2A2 /* Tweak.m in Sources */,
 				CCD6E6C323C2BF82006EC151 /* myTweakAutoHook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
