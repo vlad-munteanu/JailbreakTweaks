@@ -1,10 +1,10 @@
 @import UIKit;
 @import Foundation;
 
-@interface SBLockScreenViewController : UIViewController
+@interface SBLockScreenViewControllerBase : UIViewController
 @end
 
-%hook SBLockScreenViewController
+%hook SBLockScreenViewControllerBase
 
 - (void)viewWillAppear:(BOOL)arg1 {
     %orig;
@@ -17,7 +17,7 @@
     
     
     // Getting Preference Bundle switch value
-    NSDictionary *bundleDefaults = [[NSUserDefaults standardUserDefaults] persistentDomainForName:@"com.lesgarcons.pregerencedemopreferences"];
+    NSDictionary *bundleDefaults = [[NSUserDefaults standardUserDefaults] persistentDomainForName:@"com.lesgarconsr.pregerencedemopreferences"];
     
     id isEnabled = [bundleDefaults valueForKey:@"isEnabled"];
     

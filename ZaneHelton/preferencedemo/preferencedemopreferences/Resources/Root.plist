@@ -29,6 +29,8 @@
 			<string>Open on Github</string>
 			<key>action</key>
 			<string>openGithub</string>
+            <key>cellClass</key>
+            <string>XXXCustomCell</string>
 		</dict>
 		<dict>
 			<key>cell</key>

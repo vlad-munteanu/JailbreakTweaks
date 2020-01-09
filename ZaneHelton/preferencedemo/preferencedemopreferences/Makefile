@@ -2,7 +2,7 @@ include $(THEOS)/makefiles/common.mk
 
 BUNDLE_NAME = PreferenceDemoPreferences
 
-PreferenceDemoPreferences_FILES = XXXRootListController.m
+PreferenceDemoPreferences_FILES = XXXRootListController.m XXXRootListController.m
 PreferenceDemoPreferences_INSTALL_PATH = /Library/PreferenceBundles
 PreferenceDemoPreferences_FRAMEWORKS = UIKit
 PreferenceDemoPreferences_PRIVATE_FRAMEWORKS = Preferences
