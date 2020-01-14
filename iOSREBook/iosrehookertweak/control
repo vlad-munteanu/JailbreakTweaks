@@ -1,0 +1,9 @@
+Package: com.lesgarcons.iosrehookertweak
+Name: iOSREHookerTweak
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Vlad Munteanu <vcm@vt.edu>
+Author: Vlad Munteanu <vcm@vt.edu>
+Section: Tweaks
