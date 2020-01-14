@@ -7,8 +7,8 @@
 		_specifiers = [self loadSpecifiersFromPlistName:@"Root" target:self];
 	}
 
-    [[XXXCustomCell appearanceWhenContainedInInstancesOfClasses:
-           @[[XXXRootListController class]]] setBackgroundColor:[UIColor blackColor]];
+ //   [[XXXCustomCell appearanceWhenContainedInInstancesOfClasses:
+   //        @[[XXXRootListController class]]] setBackgroundColor:[UIColor blackColor]];
 	return _specifiers;
 }
 

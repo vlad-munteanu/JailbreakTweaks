@@ -1,0 +1,8 @@
+Package: com.lesgarcons.iosretargetapp
+Name: iOSRETargetApp
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome application!
+Maintainer: Vlad Munteanu <vcm@vt.edu>
+Author: Vlad Munteanu <vcm@vt.edu>
+Section: Utilities
