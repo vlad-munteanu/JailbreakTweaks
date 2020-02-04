@@ -33,33 +33,34 @@ static void (*_logos_orig$_ungrouped$SBLockScreenViewControllerBase$viewDidLoad)
 static void _logos_method$_ungrouped$SBLockScreenViewControllerBase$viewDidLoad(_LOGOS_SELF_TYPE_NORMAL SBLockScreenViewControllerBase* _LOGOS_SELF_CONST __unused self, SEL __unused _cmd) {
     _logos_orig$_ungrouped$SBLockScreenViewControllerBase$viewDidLoad(self, _cmd);
     
+
     
-    CGRect labelFrame = CGRectMake(10,10,200,44);
+    CGRect labelFrame = CGRectMake((self.view.frame.size.width/2) - 100,self.view.frame.size.height * 0.5,200,44);
     UILabel *budgetLabel = [[UILabel alloc] initWithFrame:labelFrame];
-    
+
     budgetLabel.backgroundColor = [UIColor clearColor];
-    budgetLabel.textColor = [UIColor blackColor];
+    budgetLabel.textColor = [UIColor whiteColor];
+
+    
+    budgetLabel.font = [UIFont systemFontOfSize:30];
+
     
     
-    budgetLabel.font = [UIFont systemFontOfSize:16];
-    
-    
-   
     budgetLabel.text = @"1,234,567,891";
+
     
     [self.view addSubview:budgetLabel];
-    
-    
     
     
 }
 
 
 static NSString * _logos_method$_ungrouped$SBLockScreenViewControllerBase$currentBudget(_LOGOS_SELF_TYPE_NORMAL SBLockScreenViewControllerBase* _LOGOS_SELF_CONST __unused self, SEL __unused _cmd) {
+    
     return @"1,234,567,891";
 }
 
 
 static __attribute__((constructor)) void _logosLocalInit() {
 {Class _logos_class$_ungrouped$SBLockScreenViewControllerBase = objc_getClass("SBLockScreenViewControllerBase"); MSHookMessageEx(_logos_class$_ungrouped$SBLockScreenViewControllerBase, @selector(viewDidLoad), (IMP)&_logos_method$_ungrouped$SBLockScreenViewControllerBase$viewDidLoad, (IMP*)&_logos_orig$_ungrouped$SBLockScreenViewControllerBase$viewDidLoad);{ char _typeEncoding[1024]; unsigned int i = 0; memcpy(_typeEncoding + i, @encode(NSString *), strlen(@encode(NSString *))); i += strlen(@encode(NSString *)); _typeEncoding[i] = '@'; i += 1; _typeEncoding[i] = ':'; i += 1; _typeEncoding[i] = '\0'; class_addMethod(_logos_class$_ungrouped$SBLockScreenViewControllerBase, @selector(currentBudget), (IMP)&_logos_method$_ungrouped$SBLockScreenViewControllerBase$currentBudget, _typeEncoding); }} }
-#line 37 "Tweak.x"
+#line 38 "Tweak.x"

@@ -23,6 +23,7 @@
     [self original_applicationDidFinishLaunching:fp8];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Hello!" message:@"I'm an alert that was shown on the SpringBoard by hooking without logos!" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil];
     [alert show];
+    
 }
 
 - (void)original_applicationDidFinishLaunching:(id)fp8 { }

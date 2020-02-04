@@ -1,0 +1,6 @@
+// testing
+#ifdef THEOS
+%hook SBLockScreenViewControllerBase
+#else
+@implementation UIApplication
+#endif

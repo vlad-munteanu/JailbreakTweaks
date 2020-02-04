@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC5829CF23D110AA00294F7B /* Tweak.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5829CE23D110AA00294F7B /* Tweak.m */; };
 		CCD6E6BC23C2BF53006EC151 /* test.h in Headers */ = {isa = PBXBuildFile; fileRef = CCD6E6BA23C2BF53006EC151 /* test.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CCD6E6C323C2BF82006EC151 /* myTweakAutoHook.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD6E6C223C2BF82006EC151 /* myTweakAutoHook.m */; };
 		CCD6E6C623C2C002006EC151 /* myTweak.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD6E6C523C2C002006EC151 /* myTweak.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC5829CE23D110AA00294F7B /* Tweak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tweak.m; path = ../../Lockscreen/americanbudget/Tweak.m; sourceTree = "<group>"; };
 		CCD6E6B723C2BF53006EC151 /* test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD6E6BA23C2BF53006EC151 /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
 		CCD6E6BB23C2BF53006EC151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			children = (
 				CCB8E5DF23CD4D4C009712D0 /* AutoHook */,
 				CCD6E6C523C2C002006EC151 /* myTweak.m */,
+				CC5829CE23D110AA00294F7B /* Tweak.m */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC5829CF23D110AA00294F7B /* Tweak.m in Sources */,
 				CCD6E6C623C2C002006EC151 /* myTweak.m in Sources */,
 				CCD6E6C323C2BF82006EC151 /* myTweakAutoHook.m in Sources */,
 			);

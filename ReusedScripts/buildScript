@@ -1,0 +1,5 @@
+#!/bin/zsh
+sed '/#ifdef THEOS/d;/#else/d;/#endif/d;/@implementation UIApplication/d' Tweak.m > Tweak.x
+
+
+

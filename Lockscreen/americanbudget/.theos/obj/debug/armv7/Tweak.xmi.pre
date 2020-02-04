@@ -1,0 +1,95 @@
+# 1 "Tweak.xmi"
+# 1 "<built-in>" 1
+# 1 "<built-in>" 3
+# 388 "<built-in>" 3
+# 1 "<command line>" 1
+# 1 "<built-in>" 2
+# 1 "/Users/noodlesoup/theos/Prefix.pch" 1
+# 10 "/Users/noodlesoup/theos/Prefix.pch"
+# 1 "/Users/noodlesoup/theos/vendor/include/_Prefix/BackwardsCompat.h" 1
+# 11 "/Users/noodlesoup/theos/Prefix.pch" 2
+#pragma clang module import Foundation /* clang -E: implicit import for #import <Foundation/Foundation.h> */
+
+
+
+
+
+
+
+
+#pragma clang module import UIKit /* clang -E: implicit import for #import <UIKit/UIKit.h> */
+# 1 "/Users/noodlesoup/theos/vendor/include/_Prefix/IOSMacros.h" 1
+# 22 "/Users/noodlesoup/theos/Prefix.pch" 2
+
+
+# 1 "/Users/noodlesoup/theos/vendor/include/HBLog.h" 1
+# 19 "/Users/noodlesoup/theos/vendor/include/HBLog.h"
+# 1 "/Users/noodlesoup/theos/vendor/include/CoreFoundation/CFLogUtilities.h" 1
+# 35 "/Users/noodlesoup/theos/vendor/include/CoreFoundation/CFLogUtilities.h"
+#pragma clang module import CoreFoundation.CFBase /* clang -E: implicit import for #include <CoreFoundation/CFBase.h> */
+#pragma clang module import CoreFoundation.CFString /* clang -E: implicit import for #include <CoreFoundation/CFString.h> */
+
+
+
+
+enum {
+    kCFLogLevelEmergency = 0,
+    kCFLogLevelAlert = 1,
+    kCFLogLevelCritical = 2,
+    kCFLogLevelError = 3,
+    kCFLogLevelWarning = 4,
+    kCFLogLevelNotice = 5,
+    kCFLogLevelInfo = 6,
+    kCFLogLevelDebug = 7,
+};
+
+extern void CFLog(int32_t level, CFStringRef format, ...);
+# 20 "/Users/noodlesoup/theos/vendor/include/HBLog.h" 2
+# 25 "/Users/noodlesoup/theos/Prefix.pch" 2
+# 2 "<built-in>" 2
+# 1 "Tweak.xmi" 2
+@import UIKit;
+
+@interface SBLockScreenViewControllerBase : UIViewController
+@end
+
+
+
+
+@implementation UIApplication
+
+- (void)viewDidLoad {
+    %orig;
+
+
+
+    CGRect labelFrame = CGRectMake((self.view.frame.size.width/2) - 100,self.view.frame.size.height * 0.5,200,44);
+    UILabel *budgetLabel = [[UILabel alloc] initWithFrame:labelFrame];
+
+    budgetLabel.backgroundColor = [UIColor clearColor];
+    budgetLabel.textColor = [UIColor whiteColor];
+
+
+    budgetLabel.font = [UIFont systemFontOfSize:30];
+
+
+
+    budgetLabel.text = @"1,234,567,891";
+
+
+    [self.view addSubview:budgetLabel];
+
+
+
+}
+
+%new
+- (NSString *)currentBudget {
+
+    return @"1,234,567,891";
+}
+
+
+
+
+@end
